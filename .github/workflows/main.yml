@@ -32,7 +32,7 @@ jobs:
         with:
           name: production-build
           path: |
-          ./client/build
+            ./client/build
 
   install-server-dependencies:
 
