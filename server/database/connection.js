@@ -21,6 +21,6 @@ try {
   console.error(err);
 }
 
-let database = client.db("employees");
+let database = client.db("finance");
 
 export default database;
