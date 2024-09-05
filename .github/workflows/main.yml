@@ -8,6 +8,9 @@ on:
 jobs:
   build-client:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./client
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
