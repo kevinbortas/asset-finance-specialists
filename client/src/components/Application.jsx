@@ -3,9 +3,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import SubForm from "./SubForm";
 
 export default function Application() {
-
-  const hello = "Testing CI_CD Pipeline";
-
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
