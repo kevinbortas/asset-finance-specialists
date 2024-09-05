@@ -46,6 +46,7 @@ The pipeline for CI/CD purposes was set up using Github Actions Workflows. It wo
 * Deploy client to an AWS S3 bucket.
 * Deploy server to an AWS Lambda function exposed using an API Gateway.
 * Log error messages.
+* Improve UI/UX experience.
 
 ## Authors
 
