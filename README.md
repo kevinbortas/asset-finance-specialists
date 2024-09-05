@@ -1,6 +1,4 @@
-# Project Title
-
-Asset-Finance-Specialists
+# Asset Finance Specialists
 
 ## Description
 
@@ -13,9 +11,11 @@ This is the developer task for youXpowered. The repository is split into 2 main 
 * Username: afs-admin
 * password: Password123
 
-### How to run
+## How to run
 
-## Step 1: Start Server
+### Step 1: Start Server
+
+Open a terminal window and copy the following commands:
 
 ```
 cd server
@@ -23,13 +23,29 @@ npm install
 node --env-file=config.env server
 ```
 
-## Step 2: Start Client
+### Step 2: Start Client
+
+Open another terminal window and copy the following commands:
 
 ```
 cd client
 npm install
 npm run dev
 ```
+
+## Pipeline Configuration
+
+The pipeline for CI/CD purposes was set up using Github Actions Workflows. It works by building installing dependencies and building the project in the client directory. It then uploads the artifacts. The next pipeline step involves installing the dependencies in the server directory. Once these steps are done, it initiates the final step which then deploys the project.
+
+## Additional Comments
+
+### Things to do/improve on if I had more time
+
+* Create a user log in page which allows them to create/edit and view only their finance applications.
+* Create an admin portal which allows admins to approve/deny applications.
+* Deploy client to an AWS S3 bucket.
+* Deploy server to an AWS Lambda function exposed using an API Gateway.
+* Log error messages.
 
 ## Authors
 
