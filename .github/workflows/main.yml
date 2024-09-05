@@ -33,7 +33,7 @@ jobs:
           name: poduction file
           path: ./client/build
 
-  build-server:
+  install-server-dependencies:
 
     needs: build-client
 
@@ -45,27 +45,16 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 14.x
 
       - name: Install Server Dependencies
         run: |
           cd server
           npm install
 
-      - name: Build Server Project
-        run: |
-          cd server
-          npm run build
-
-      - name: Upload artifact to enable deployment
-        uses: actions/upload-artifact@v3
-        with:
-          name: poduction file
-          path: ./server/build
-
   deploy:
    
-    needs: build-server
+    needs: install-server-dependencies
     
     runs-on: ubuntu-latest
     steps:
