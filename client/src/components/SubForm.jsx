@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const SubForm = ({ type, existingForm, updateFormCallback }) => {
   const typeCapitalized = type[0].toUpperCase() + type.slice(1)
-  
+
   const [form, setForm] = useState(existingForm);
 
   const addFormRow = () => {
@@ -29,7 +29,6 @@ const SubForm = ({ type, existingForm, updateFormCallback }) => {
   }, [form])
 
   useEffect(() => {
-    console.log(existingForm)
     setForm(existingForm);
   }, [existingForm])
 
