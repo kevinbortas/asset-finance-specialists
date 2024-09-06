@@ -43,7 +43,7 @@ The pipeline for CI/CD purposes was set up using Github Actions Workflows. It wo
 
 * Create a user log in page which allows them to create/edit and view only their finance applications.
 * Create an admin portal which allows admins to approve/deny applications.
-* Add ESLint
+* Add ESLint.
 * Deploy client to an AWS S3 bucket.
 * Deploy server to an AWS Lambda function exposed using an API Gateway.
 * Log error messages.
