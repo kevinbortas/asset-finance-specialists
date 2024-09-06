@@ -2,7 +2,7 @@
 
 ## Description
 
-This is the developer task for youXpowered. The repository is split into 2 main directories, client and server. The client directory contains all of the front-end logic, which was created using Javascript and React. The server directory contains all of the back-end logic, using node.js and express to expose API endpoints and communicating with the MongoDB database.
+The repository is split into 2 main directories, client and server. The client directory contains all of the front-end logic, which was created using Javascript and React. The server directory contains all of the back-end logic, using node.js and express to expose API endpoints and communicating with the MongoDB database.
 
 ## Getting Started
 
@@ -43,6 +43,7 @@ The pipeline for CI/CD purposes was set up using Github Actions Workflows. It wo
 
 * Create a user log in page which allows them to create/edit and view only their finance applications.
 * Create an admin portal which allows admins to approve/deny applications.
+* Add ESLint
 * Deploy client to an AWS S3 bucket.
 * Deploy server to an AWS Lambda function exposed using an API Gateway.
 * Log error messages.
